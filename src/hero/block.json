@@ -1,0 +1,55 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "itinerisblocks/hero",
+	"title": "Hero block",
+	"category": "itinerisblocks",
+	"icon": "text-page",
+	"description": "Hero block",
+	"keywords": [
+		"hero",
+		"main",
+		"top"
+	],
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"header": {
+			"type": "string",
+			"source": "html",
+			"selector": ".wp-block-itinerisblocks-hero__header"
+		},
+		"description": {
+			"type": "string",
+			"source": "html",
+			"selector": ".wp-block-itinerisblocks-hero__descripton"
+		},
+		"author": {
+			"type": "string",
+			"source": "html",
+			"selector": ".wp-block-itinerisblocks-hero__author"
+		},
+		"imgAlt": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "alt",
+			"default": ""
+		},
+		"imgID": {
+			"type": "number",
+			"default": 0
+		},
+		"imgUrl": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "src"
+		}
+	},
+	"textdomain": "itinerisblocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

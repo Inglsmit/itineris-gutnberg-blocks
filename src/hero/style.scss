@@ -1,0 +1,124 @@
+@import '../assets/scss/tools/units';
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.entry-content>.wp-block-itinerisblocks-hero.alignfull:not(.wp-block-group.has-background) {
+	margin-bottom: rem-calc(60px);
+	margin-top   : 0;
+}
+
+.wp-block-itinerisblocks-hero {
+	font-family   : 'Questrial', sans-serif;
+	min-height    : rem-calc(692px);
+	padding-top   : rem-calc(180px);
+	position      : relative;
+	display       : flex;
+	align-items   : center;
+	padding-bottom: rem-calc(180px);
+	overflow      : hidden;
+
+	&.alignfull {
+		img {
+			width: 100%;
+		}
+	}
+
+	&__media-wrap {
+		width   : 100%;
+		overflow: hidden;
+		position: absolute;
+		top     : 0;
+		right   : 0;
+		left    : 0;
+		bottom  : 0;
+		display : flex;
+
+		.wp-block-itinerisblocks-hero__left-col {
+			background-color: #04C48D;
+		}
+
+		img {
+			width     : 100%;
+			height    : 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__left-col,
+	&__right-col {
+		width: 50%;
+	}
+
+	&__container {
+		display  : flex;
+		max-width: rem-calc(1145px);
+		margin   : 0 auto;
+		width    : 100%;
+	}
+
+	&__inner-block {
+		display    : flex;
+		width      : 100%;
+		height     : 100%;
+		align-items: center;
+		margin     : 0 auto;
+
+		.wp-block-itinerisblocks-hero__left-col {
+			padding-right: rem-calc(71px);
+		}
+
+		.wp-block-itinerisblocks-hero__header {
+			font-family  : 'Questrial', sans-serif;
+			font-size    : rem-calc(40px);
+			font-weight  : 600;
+			line-height  : 1.2;
+			margin-bottom: rem-calc(16px);
+			position     : relative;
+		}
+
+		.wp-block-itinerisblocks-hero__descripton {
+			font-family  : 'Poppins', sans-serif;
+			font-size    : rem-calc(27px);
+			line-height  : 1.48;
+			font-weight  : 400;
+			position     : relative;
+			margin-top   : 0;
+			margin-bottom: 0;
+
+			&:before {
+				content         : '';
+				background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAwCAYAAABaHInAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALiSURBVHgB7ZhfbtNAEMa/2ZZQiQfMCfBLRdRWqnlAanlpjlBOQHqCpiegPQG9Ae0JKCfAvJRKvASpFKSAZG4QhEBN/GfYdRIpLU2z47i1XPkXKd7Y6518M7Oz9hJyoF5fc2OFBqA8Aj9mggeC0zn9+Ai3wNLSMy+m+UYCWtU/PeLk5zwy4HoN517/fBOkNkC8GTOcwRXWH4yaN4p2ZiOeUy+N/XDMfvpN6IqE1T0dmb5qIerpAclJB7phAeMYh9b6/W1W3Bo4c7J9K2FphMLefhzCeOhWxYzsp4KiXktHw7GxP1XYk5X17STq7eqmgwIY2bcVNOJaYYvL668TRgsFMMySV1ntTxS2uPz8jc65JgpgIKrv6+YqMqKuOmkiVbwozizK8F/EFpfWmvowa/q19Xz4gAyYIoXMkWJfh+ow/L1wROOn03Ie0nvddCGGfQV61/tz/yAI/C4ykBYKxr7wNr3y4IiTaK9z9qk9OnchYlrULqSiGIH+Mzs/vp4cYQZSp0bYhYwuE7/onJ74ly/MXxjYrFMSmD6HSbIZfDsJMCNDp0qWlG4Y89NJttWlge3RkcpLlHGqPkidunOd7fGquAHJuIq38hBlSCI0Jf2NUztnxwfXdUmF1VfWGhDNLfa/X5HXWWEmWbRAe9N6pMJipiYksDpETgzT0JXccw9he1qfYSqSaN0Ia7WZKuA4cd+8x4nono2V9Ukos9LrEHiwhv2gnW2duhoS2E7tTxVlUAvRuWxgXeKRJyR7ytBvTb9s+ilmFglTuiIhV0j6OmQXsYSVCwHxnF0q2MOupDcxWU0DRSAXAmpJnOP8ShFFLCG2E6aftR5CwN/agwAFQnOWEYNwDcm3IspJmK2FSVIhQEkwT/cSYc5gy8COzpfjLRSEdMPUEW4Z5C5MF7u3eutiajpm2gkulMGu79QsU7ijVMLKRiWsbFTCykYlrGxUwspGJaxsVMLKRiWsbFTCysadFfYPlOodCiyNsooAAAAASUVORK5CYII=");
+				width           : rem-calc(54px);
+				height          : rem-calc(48px);
+				position        : absolute;
+				left            : rem-calc(-64px);
+				top             : rem-calc(10px);
+			}
+
+			&:after {
+				content         : '';
+				display         : inline-block;
+				background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAfCAYAAABtYXSPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHfSURBVHgB7ZdLTsMwEIZ/O0Ww5AhhwUOFRVkg8VjQG1BOADcAToA4AeUElBPADciuldi04lXRIvkIXSCkksTDuAiEIHaSqkIs8kmJJY/H+j0zthMxv7xBGIPefVMk9Y87n0HiH1GIsVGIsVGIsVGIsVGIsVGIsVEKY5pLMkx58hKgCnIjGnYb1fg1a/W0GfhT4Jqbqs1u+4RwkTLnwJUmH5PHd9gGf10zvt1EatzIKORVUanOOgeQTBaztLTuw+2pkBMvHlZddknUSY5MKaVeSHSQE6lRc9ljj9qJYmItnI7CQ4D8bFstBNW/awXJkRHYcTk+3TavkIPFlY0DuGpQiMA0v8QsrGweuxwJdIEcLCxv7WlC3TUmjPWJaUufHabap8K3UyLah12JijQayEC5vFYJRemQoPfcI0VDdZtqJIZ3TjWWsoZoaJyc249XeKS6LeUaM1/erHOat8MsVwkvLtQfURmJiT1xzr0+Uv4DOWInz4+t9FoRdIBsDIBoV3Vv1JeYTE5ER/2HVgOTgsyhGe32Hm7a37tTrgMK+FZf7U1QCKf6LHydXv0pxJAUGY4ELkjSldn7mAyjOUNNdVfNsRjBudOBOVWNgOhlpq1UMMD4sC/xI/kQo04sqJ11Ue+J5sHTJuuy+QAAAABJRU5ErkJggg==');
+				object-fit      : cover;
+				width           : rem-calc(35px);
+				height          : rem-calc(31px);
+				margin-left     : rem-calc(8px);
+				margin-bottom   : rem-calc(-14px);
+			}
+		}
+
+		.wp-block-itinerisblocks-hero__author {
+			font-family  : 'Poppins', sans-serif;
+			font-weight  : 400;
+			font-size    : rem-calc(16px);
+			line-height  : 1.5;
+			margin-top   : rem-calc(25px);
+			margin-bottom: 0;
+			position     : relative;
+		}
+
+	}
+
+
+
+}
